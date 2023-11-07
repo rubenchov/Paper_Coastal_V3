@@ -13,8 +13,7 @@ for file_name in files_names:
     #print(file_name)
     image_path = input_images_path + "/" + file_name
     print(count)
-    # print()
-    image = cv2.imread(image_path)
+    image = cv2.imread(image_path, cv2.IMREAD_UNCHANGED)
     if image is None:
         continue
     # Comment the following 5 lines if you don't need them
