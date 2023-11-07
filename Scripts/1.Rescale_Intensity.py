@@ -30,9 +30,6 @@ for file_name in files_names:
     img2[img2 < min] = 0 #Values lower than min(img) are reasigned to zero. Other values will remain the same
     img3 = 255.0 * (img2 / escala_display) #Normalized to 0-1 and then rescaled 0-255
     img4 = img3.astype(np.uint8) #Change datatype to 8-bit unsigned integer
-
-    pathsplit = file_name.split('.png') #Split the path of the image [name, '.png']
-    imgpathscaled = output_images_path + '/' +pathsplit[0] + '_scaled.png' #Added string '_scaled.png' to new name of image to save
-    cv2.imwrite(imgpathscaled, img4)
-    # cv2.imshow( 'brillo',imgpathscaled)
+    cv2.imwrite(output_images_path + '/' + file_name, img4)
+    # cv2.imshow('Rescale',imgpathscaled)
     count += 1
