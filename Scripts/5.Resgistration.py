@@ -71,6 +71,11 @@ base = cv2.imread(input_images_path + '/' + path_img_base)  # Reference image.
 count = 0
 trim = 50
 
+# =============================================================================
+# The registration process accommodates the image with respect to a reference according to its 
+# dimensions, therefore sometimes it fills with non-existent stripes, due to this the borders are cropped by 50 pixels
+# =============================================================================
+
 for file_name in files_names:
     #print(file_name)
     image_path = input_images_path + "/" + file_name
