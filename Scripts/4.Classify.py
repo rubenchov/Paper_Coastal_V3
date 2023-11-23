@@ -17,7 +17,7 @@ output_images_path = "P:/.shortcut-targets-by-id/11U9sP9uc_lmRAe7rgiV0UB_1__qEdY
 
 count = 0
 total = []
-b = 1 # channel chosen to make the classification
+b = 2 # channel chosen to make the classification
 
 for file_name in files_names:
     print(file_name)
