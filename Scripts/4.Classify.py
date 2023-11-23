@@ -8,7 +8,6 @@ Created on Thu Nov 23 12:41:40 2023
 import cv2 
 import numpy as np
 import os
-import matplotlib.pylab as plt
 
 input_images_path = "P:/.shortcut-targets-by-id/11U9sP9uc_lmRAe7rgiV0UB_1__qEdYzt/Paper_Coastal_V3/Images/4.Composite"
 files_names = os.listdir(input_images_path)
@@ -21,7 +20,7 @@ total = []
 b = 1 # channel chosen to make the classification
 
 for file_name in files_names:
-    #print(file_name)
+    print(file_name)
     image_path = input_images_path + "/" + file_name
     print(count)
     img = cv2.imread(image_path, cv2.IMREAD_COLOR)
