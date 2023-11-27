@@ -2,7 +2,7 @@
 
 This repository contains the scripts and results used for the analysis of progradation and erosion in the Atrato River delta, supported in the paper 'Detection of erosion and progradation in the Colombian Atrato River Delta by using Sentinel-1 synthetic aperture radar data', where the methodology can be known in detail. At the root of the repository there are two folders, the first called 'Images' which contains 7 folders with images of the step-by-step process of study, and a second called 'Scripts' where 9 scripts are housed, with which the images of the first folder were obtained.
 
-1. In the folder 'Images/1.Original' there are 32 SAR images captured by Sentinel-1, taken in pairs from 11/06/2016 to 30/05/2023 in the VH and VV polarizations. By running the 'Scripts/1.Rescale_Intensity.py' script, it is possible to have a better visualization of these images that are stored in 'Images/2.Rescaled' (32 images).
+1. In the folder `'Images/1.Original`  there are 32 SAR images captured by Sentinel-1, taken in pairs from 11/06/2016 to 30/05/2023 in the VH and VV polarizations. By running the 'Scripts/1.Rescale_Intensity.py' script, it is possible to have a better visualization of these images that are stored in 'Images/2.Rescaled' (32 images).
 
 2. The SAR images contain a characteristic speckle noise that must be eliminated, for this, we used an autoencoder located in 'Scripts/Autoencoder_despeckling.h5' and executed by 'Scripts/2.Filter.py' script that uses the images in 'Images/2.Rescaled' folder (32 images). This autoencoder receives images of 512x512 pixels, by which it is necessary to divide each image, and after being filtered, they are saved in the folder 'Images/3.Filtered' (32 images).
 
