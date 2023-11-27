@@ -1,4 +1,3 @@
 # Paper_Coastal_V3
 
-1. Original Images
-2. si señores.
+This repository contains the scripts and results used for the analysis of progradation and erosion in the Atrato River delta, supported in the paper 'Detection of erosion and progradation in the Colombian Atrato River Delta by using Sentinel-1 synthetic aperture radar data', where the methodology can be known in detail. At the root of the repository there are two folders, the first called 'Images' which contains 7 folders with images of the step-by-step process of study, and a second called 'Scripts' where 9 scripts are housed, with which the images of the first folder were obtained.
